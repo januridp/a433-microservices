@@ -1,0 +1,57 @@
+item-app-1  | 
+item-app-1  | > docker-software-delivery@1.0.0 start /app
+item-app-1  | > node ./bin/www
+item-app-1  | 
+item-app-1  | NODE_ENV: production
+item-app-1  | Connected to database
+item-app-1  | [0mGET / [32m200 [0m173.874 ms - 785[0m
+item-app-1  | [0mGET /robots.txt?1703597391791 [33m404 [0m12.741 ms - 270[0m
+item-app-1  | [0mGET /javascripts/dist/dist.min.js [32m200 [0m15.585 ms - 186999[0m
+item-app-1  | [0mGET /stylesheets/style.css [32m200 [0m64.826 ms - 519[0m
+item-app-1  | [0mGET /javascripts/dist/dist.min.js [32m200 [0m1.055 ms - 186999[0m
+item-app-1  | [0mGET /api [32m200 [0m4.959 ms - 2[0m
+item-app-1  | [0mGET /favicon.ico [33m404 [0m1.248 ms - 270[0m
+item-app-1  | [0mPOST /api [32m201 [0m81.010 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.086 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m1.900 ms - 48[0m
+item-db-1   | 2023-12-26T13:29:36.926+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=21684606deae
+item-db-1   | 2023-12-26T13:29:36.926+0000 I CONTROL  [initandlisten] db version v3.0.15
+item-db-1   | 2023-12-26T13:29:36.926+0000 I CONTROL  [initandlisten] git version: b8ff507269c382bc100fc52f75f48d54cd42ec3b
+item-db-1   | 2023-12-26T13:29:36.926+0000 I CONTROL  [initandlisten] build info: Linux ip-10-166-66-3 3.2.0-4-amd64 #1 SMP Debian 3.2.46-1 x86_64 BOOST_LIB_VERSION=1_49
+item-db-1   | 2023-12-26T13:29:36.926+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+item-db-1   | 2023-12-26T13:29:36.926+0000 I CONTROL  [initandlisten] options: {}
+item-db-1   | 2023-12-26T13:29:36.933+0000 I JOURNAL  [initandlisten] journal dir=/data/db/journal
+item-db-1   | 2023-12-26T13:29:36.933+0000 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+item-db-1   | 2023-12-26T13:29:37.045+0000 I JOURNAL  [durability] Durability thread started
+item-db-1   | 2023-12-26T13:29:37.045+0000 I JOURNAL  [journal writer] Journal writer thread started
+item-db-1   | 2023-12-26T13:29:37.046+0000 I CONTROL  [initandlisten] 
+item-db-1   | 2023-12-26T13:29:37.046+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+item-db-1   | 2023-12-26T13:29:37.046+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+item-db-1   | 2023-12-26T13:29:37.047+0000 I CONTROL  [initandlisten] 
+item-db-1   | 2023-12-26T13:29:37.050+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+item-db-1   | 2023-12-26T13:29:37.617+0000 I NETWORK  [initandlisten] connection accepted from 172.18.0.3:49244 #1 (1 connection now open)
+item-db-1   | 2023-12-26T13:29:56.613+0000 I INDEX    [conn1] allocating new ns file /data/db/accumulator.ns, filling with zeroes...
+item-db-1   | 2023-12-26T13:29:56.677+0000 I STORAGE  [FileAllocator] allocating new datafile /data/db/accumulator.0, filling with zeroes...
+item-db-1   | 2023-12-26T13:29:56.677+0000 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+item-db-1   | 2023-12-26T13:29:56.679+0000 I STORAGE  [FileAllocator] done allocating datafile /data/db/accumulator.0, size: 64MB,  took 0 secs
+item-db-1   | 2023-12-26T13:30:21.397+0000 I NETWORK  [conn1] end connection 172.18.0.3:49244 (0 connections now open)
+item-db-1   | 2023-12-26T13:30:21.538+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+item-db-1   | 2023-12-26T13:30:21.538+0000 I CONTROL  [signalProcessingThread] now exiting
+item-db-1   | 2023-12-26T13:30:21.538+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+item-db-1   | 2023-12-26T13:30:21.538+0000 I NETWORK  [signalProcessingThread] closing listening socket: 5
+item-db-1   | 2023-12-26T13:30:21.538+0000 I NETWORK  [signalProcessingThread] closing listening socket: 6
+item-db-1   | 2023-12-26T13:30:21.538+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+item-db-1   | 2023-12-26T13:30:21.538+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+item-db-1   | 2023-12-26T13:30:21.538+0000 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+item-db-1   | 2023-12-26T13:30:21.538+0000 I STORAGE  [signalProcessingThread] shutdown: waiting for fs preallocator...
+item-db-1   | 2023-12-26T13:30:21.538+0000 I STORAGE  [signalProcessingThread] shutdown: final commit...
+item-db-1   | 2023-12-26T13:30:21.541+0000 I JOURNAL  [signalProcessingThread] journalCleanup...
+item-db-1   | 2023-12-26T13:30:21.541+0000 I JOURNAL  [signalProcessingThread] removeJournalFiles
+item-db-1   | 2023-12-26T13:30:21.543+0000 I NETWORK  [initandlisten] Port 27017 is no longer valid
+item-db-1   | 2023-12-26T13:30:21.543+0000 I JOURNAL  [signalProcessingThread] Terminating durability thread ...
+item-db-1   | 2023-12-26T13:30:21.645+0000 I JOURNAL  [journal writer] Journal writer thread stopped
+item-db-1   | 2023-12-26T13:30:21.645+0000 I JOURNAL  [durability] Durability thread stopped
+item-db-1   | 2023-12-26T13:30:21.645+0000 I STORAGE  [signalProcessingThread] shutdown: closing all files...
+item-db-1   | 2023-12-26T13:30:21.646+0000 I STORAGE  [signalProcessingThread] closeAllFiles() finished
+item-db-1   | 2023-12-26T13:30:21.646+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+item-db-1   | 2023-12-26T13:30:21.646+0000 I CONTROL  [signalProcessingThread] dbexit:  rc: 0

@@ -1,0 +1,20 @@
+#Menggunakan Docker Compose versi 3.8
+version: "3.8"
+
+#Memiliki dua buah service: item-app dan item-db
+services:
+  item-db:
+    image: mongo:3.0 #Menggunakan image mongo:3 dari Docker Hub
+    restart: always
+    volumes:
+      - app-db:/data/db #Memakai volume bernama app-db dengan target /data/db di container
+  item-app:
+    depends_on: #Pastikan item-app hanya berjalan setelah item-db diluncurkan
+      - item-db
+    image: januridp/item-app:v1 #Menggunakan image item-app dari Docker Hub
+    restart: always
+    ports:
+      - 80:8080 #Melakukan port mapping agar dapat diakses dari port 80 di host
+#Memiliki satu buah volume bernama app-db
+volumes:
+  app-db:
